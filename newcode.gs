@@ -134,12 +134,15 @@ ${'【休憩の取得方法】\n'+ restList}`
       "unfurl_links" : false,//https://qiita.com/tiger_t/items/70d4b30eea46838234f4
       "username" : "カスタマーサポート_Ver2.0"
       }
-    var postData　=　JSON.stringify(postData);
+    var postData = JSON.stringify(postData);
     var options = {
       "method" : "POST",
       "payload" : postData,
       }
-    const url = 'https://hooks.slack.com/services/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';
+
+    const scriptProperties = PropertiesService.getScriptProperties();
+    const propData = scriptProperties.getProperties();
+    const url = propData["slack-api-key"]
     UrlFetchApp.fetch(url, options);
 
     //デリバリの作業フォルダも同時に作成しておく。

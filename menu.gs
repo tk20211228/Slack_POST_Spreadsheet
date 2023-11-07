@@ -3,6 +3,7 @@ function onOpen(e) {
     meinUI
         .createMenu('メンテナンスツール')
         .addSubMenu(meinUI.createMenu('メンテナンスツール')
+            .addItem('プロパティ確認','openCheck')//propで管理
             .addItem('選択範囲の位置を取得', 'mygetRowcolumnActiveRange')
             .addItem('getRangeで使用できる選択範囲の位置','mygetRowcolumnActiveRange0530')
             )
