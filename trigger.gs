@@ -14,20 +14,6 @@ function setTrigger() {
       .create();
 };
 
-// //指定のトリガーを削除する
-// //https://somachob.com/gas-set-trigge//
-// //プロジェクト内のすべてのトリガーを削除
-// const deleteTrigger = () => {
-//   //プロジェクトのすべてのトリガーを取得
-//   const triggers = ScriptApp.getProjectTriggers();
-
-//   //すべてのトリガーをループ処理
-//   for(const trigger of triggers){
-//     ScriptApp.deleteTrigger(trigger);  //トリガーの削除
-//   }
-// }
-
-
 //https://tonari-it.com/gas-trigger-delete/
 //指定のトリガーのみ削除
 function delTrigger() {
