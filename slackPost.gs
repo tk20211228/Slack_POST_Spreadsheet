@@ -145,9 +145,9 @@ ${'【休憩の取得方法】\n'+ restList}`
     const url = propData["slack-api-key"]
     UrlFetchApp.fetch(url, options);
 
-    //デリバリの作業フォルダも同時に作成しておく。
-      let deliveryDay = Utilities.formatDate(baseDate, 'JST', 'yyyyMMdd');//現在日時を取得
-      createDeliveryFolder(deliveryDay);
+    // //デリバリの作業フォルダも同時に作成しておく。
+    //   let deliveryDay = Utilities.formatDate(baseDate, 'JST', 'yyyyMMdd');//現在日時を取得
+    //   createDeliveryFolder(deliveryDay);
 
     }
 }
